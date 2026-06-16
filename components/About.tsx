@@ -108,7 +108,7 @@ return ( <section
               Email
             </span>
             <br />
-            dipakpatil229@gmail.com
+            dipakpatil0714@gmail.com
           </div>
 
         </div>
