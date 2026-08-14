@@ -1,6 +1,6 @@
 export default function Stats() {
   const stats = [
-    { value: "6+", label: "Projects" },
+    { value: "7+", label: "Projects" },
     { value: "3+", label: "Certifications" },
     { value: "4+", label: "Technologies" },
     { value: "2026", label: "Graduation" },

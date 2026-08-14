@@ -13,6 +13,12 @@ const certifications = [
     image: "/certificates/eda.jpg",
     link: "/certificates/eda.jpg",
   },
+    {
+    title: "MySQL",
+    issuer: "Certification",
+    image: "/certificates/MySQL.jpg",
+    link: "/certificates/MySQL.jpg",
+  },
   {
     title: "Power BI",
     issuer: "Certification",
