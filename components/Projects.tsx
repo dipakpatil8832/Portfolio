@@ -2,7 +2,14 @@
 
 import { useState } from "react";
 
-const aimlProjects = [
+type Project = {
+  title: string;
+  tech: string;
+  github: string;
+  live?: string;
+};
+
+const aimlProjects: Project[] = [
   {
     title: "Text Emotion Detection",
     tech: "Python, NLP, Machine Learning, Streamlit",
@@ -10,7 +17,7 @@ const aimlProjects = [
       "https://github.com/dipakpatil8832/Text-Emotion-detection",
   },
 
-  // Add your other AIML projects here
+  // Add your future AIML projects here
   // {
   //   title: "AI-Based Toxic Behavior Detection",
   //   tech: "Python, NLP, Scikit-learn, TF-IDF, Streamlit",
@@ -19,7 +26,7 @@ const aimlProjects = [
   // },
 ];
 
-const dataAnalyticsProjects = [
+const dataAnalyticsProjects: Project[] = [
   {
     title: "Hotel Booking Cancellation Analysis",
     tech: "Python, Pandas, Plotly, Streamlit",
@@ -73,10 +80,7 @@ const dataAnalyticsProjects = [
 ];
 
 export default function Projects() {
-
-  const [activeTab, setActiveTab] = useState<"aiml" | "analytics">(
-    "aiml"
-  );
+  const [activeTab, setActiveTab] = useState<"aiml" | "analytics">("aiml");
 
   const projects =
     activeTab === "aiml"
@@ -88,23 +92,21 @@ export default function Projects() {
       id="projects"
       className="relative z-10 bg-transparent text-white py-20"
     >
-
       <div className="max-w-7xl mx-auto px-6">
 
-        {/* Main Heading */}
+        {/* Heading */}
 
         <h2 className="text-5xl font-bold text-center mb-10">
           Projects
         </h2>
 
 
-        {/* ================= TABS ================= */}
+        {/* Tabs */}
 
         <div className="flex justify-center mb-12">
-
           <div className="flex items-center bg-slate-950 border border-slate-800 rounded-xl p-1">
 
-            {/* AIML TAB */}
+            {/* AIML */}
 
             <button
               onClick={() => setActiveTab("aiml")}
@@ -118,12 +120,12 @@ export default function Projects() {
             </button>
 
 
-            {/* DIVIDER */}
+            {/* Divider */}
 
-            <div className="h-6 w-px bg-slate-700"></div>
+            <div className="h-6 w-px bg-slate-700" />
 
 
-            {/* DATA ANALYTICS TAB */}
+            {/* Data Analytics */}
 
             <button
               onClick={() => setActiveTab("analytics")}
@@ -137,30 +139,34 @@ export default function Projects() {
             </button>
 
           </div>
-
         </div>
 
 
-        {/* ================= PROJECT CARDS ================= */}
+        {/* Projects */}
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
           {projects.map((project) => (
-
             <div
               key={project.title}
               className="bg-slate-950 border border-slate-800 rounded-2xl p-6 hover:border-sky-400 hover:-translate-y-2 transition-all duration-300"
             >
+
+              {/* Project Title */}
 
               <h3 className="text-2xl font-semibold mb-3">
                 {project.title}
               </h3>
 
 
+              {/* Technology */}
+
               <p className="text-gray-400 mb-6">
                 {project.tech}
               </p>
 
+
+              {/* Buttons */}
 
               <div className="flex gap-4 flex-wrap">
 
@@ -174,8 +180,7 @@ export default function Projects() {
                 </a>
 
 
-                {"live" in project && project.live && (
-
+                {project.live && (
                   <a
                     href={project.live}
                     target="_blank"
@@ -184,19 +189,16 @@ export default function Projects() {
                   >
                     Live Demo
                   </a>
-
                 )}
 
               </div>
 
             </div>
-
           ))}
 
         </div>
 
       </div>
-
     </section>
   );
 }
