@@ -17,13 +17,12 @@ const aimlProjects: Project[] = [
       "https://github.com/dipakpatil8832/Text-Emotion-detection",
   },
 
-  // Add your future AIML projects here
-  // {
-  //   title: "AI-Based Toxic Behavior Detection",
-  //   tech: "Python, NLP, Scikit-learn, TF-IDF, Streamlit",
-  //   github: "YOUR_GITHUB_LINK",
-  //   live: "YOUR_LIVE_LINK",
-  // },
+  {
+    title: "AI Chat Bot with LangChain",
+    tech: "LangChain, Output Parsers, Python, Streamlit",
+    github: "https://github.com/dipakpatil8832/langchain-llm-chatbot",
+    live: "https://langchain-llm-chatbot-2026.streamlit.app/",
+  },
 ];
 
 const dataAnalyticsProjects: Project[] = [
