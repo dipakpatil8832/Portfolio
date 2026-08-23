@@ -118,6 +118,60 @@ export default function FeaturedProject() {
           </div>
 
         </div>
+        <br />
+        <br />
+        {/* Project 3 */}
+        <div className="grid md:grid-cols-2 gap-10 items-center mb-24">
+
+          <div>
+            <span className="text-sky-400">
+              CHATBOT / LANGCHAIN / GEN AI
+            </span>
+
+            <h3 className="text-4xl font-bold mt-4">
+              Chatbot with LangChain and Gen AI
+            </h3>
+
+            <p className="text-gray-400 mt-6">
+               Developed a chatbot using LangChain and Generative AI
+    to provide intelligent responses and enhance user
+    interactions.
+            </p>
+
+            <div className="grid grid-cols-2 gap-4 mt-8">
+
+              <div className="bg-slate-900 p-4 rounded-lg">
+                <span className="text-2xl font-bold">
+                  LangChain
+                </span>
+                <br />
+                Generative AI
+              </div>
+
+              <div className="bg-slate-900 p-4 rounded-lg">
+                <a
+                  href="https://ai-studio-chatbot.streamlit.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full text-center bg-sky-500 hover:bg-sky-600 py-3 rounded-lg transition"
+                >
+                  Live Demo
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+          <div>
+            <img
+              src="/project/chat_bot.png"
+              alt="Chatbot with LangChain and Gen AI"
+              className="rounded-2xl border border-slate-800"
+            />
+          </div>
+
+        </div>
+
 
       </div>
     </section>

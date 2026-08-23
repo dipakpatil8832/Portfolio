@@ -21,7 +21,7 @@ const aimlProjects: Project[] = [
     title: "AI Chat Bot with LangChain",
     tech: "LangChain, Output Parsers, Python, Streamlit",
     github: "https://github.com/dipakpatil8832/langchain-llm-chatbot",
-    live: "https://langchain-llm-chatbot-2026.streamlit.app/",
+    live: "https://ai-studio-chatbot.streamlit.app/",
   },
 ];
 

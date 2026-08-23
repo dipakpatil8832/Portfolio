@@ -46,7 +46,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 rounded-lg border border-blue-500 text-blue-400 font-semibold hover:bg-blue-500 hover:text-white transition"
-              >
+              > 
                 ML Engineer Resume
               </a>
             </div>
