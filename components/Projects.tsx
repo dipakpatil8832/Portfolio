@@ -23,6 +23,13 @@ const aimlProjects: Project[] = [
     github: "https://github.com/dipakpatil8832/langchain-llm-chatbot",
     live: "https://ai-studio-chatbot.streamlit.app/",
   },
+
+  {
+    title: "Rag Based Vedio Recommendation System",
+    tech: "Vector Database, Embedings, Python, Streamlit",
+    github: "https://github.com/dipakpatil8832/Video-Lecture-Semantic-Search-using-RAG",
+    live: "https://video-lecture-semantic-search.streamlit.app/",
+  },
 ];
 
 const dataAnalyticsProjects: Project[] = [
