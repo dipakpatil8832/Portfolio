@@ -13,8 +13,8 @@ const aimlProjects: Project[] = [
   {
     title: "Text Emotion Detection",
     tech: "Python, NLP, Machine Learning, Streamlit",
-    github:
-      "https://github.com/dipakpatil8832/Text-Emotion-detection",
+    github:"https://github.com/dipakpatil8832/Text-Emotion-detection",
+    live:"https://text-emotion-detection-2026.streamlit.app/"
   },
 
   {
